@@ -1,8 +1,8 @@
 function printName() {
-  const helloName = "Hi Flavius";
+  const helloName = "Hi John";
   return function () {
     return helloName;
   };
 }
-const myFunc = printName();
-console.log(myFunc());
+const inner = printName();
+console.log(inner());
